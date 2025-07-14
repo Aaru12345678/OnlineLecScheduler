@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* full screen height */
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* prevent page scroll */
+}
+.top-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  background-color: #3c009d; /* matches the heading background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-bar h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #3c009d;
+  border: 2px solid #3c009d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #3c009d;
+  color: white;
+}
+
+.left-panel {
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  /* left panel stays fixed and does NOT scroll */
+}
+
+.left-panel h2{
+  
+  background-color: #3c009d;
+    border-radius: 15px;
+    margin-top: 11%;
+    color: white;
+    padding: 11px;
+    border-right: 1px solid #ccc;
+}
+
+.right-panel {
+  width: 75%;
+  padding: 20px;
+  overflow-y: auto; /* allow vertical scrolling */
+  height: 100vh; /* ensures it fills full height and scrolls */
+}
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.course-form input,
+.course-form textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.course-form button {
+  width: 150px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.course-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-list li {
+  background: #f0f8ff;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+}
